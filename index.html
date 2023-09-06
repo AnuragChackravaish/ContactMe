@@ -70,6 +70,35 @@
             margin: auto;
             border-radius: 30px;
         }
+        
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+                /* Add some padding to the container */
+                background-size: cover;
+            }
+
+            form {
+                width: 75%;
+                height: 70%
+                    /* Make the form full width */
+            }
+
+            form label {
+                font-size: 1rem;
+            }
+
+            form input,
+            form textarea {
+                font-size: 14px;
+                /* Increase font size for better readability */
+            }
+
+            form button {
+                width: 100%;
+                /* Make the button full width */
+            }
+        }
     </style>
 </head>
 
@@ -90,28 +119,6 @@
             <button type="submit">Send</button>
         </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <!-- <script>
-        function sendEmail() {
-            event.preventDefault();
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                // Host: "smtp.gmail.com",
-                Username: "anthonystark@gmail.com",
-                Password: "44907981F46EC5D3EBF08BF146194BD12E88",
-                To: 'chackravaishanurag@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "NEW CONTACT FORM ENQUIRY",
-                Body: "Name: " + document.getElementById("name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Phone no: " + document.getElementById("phone").value
-                    + "<br> Message: " + document.getElementById("message").value
-            }).then(
-                message => alert("Message Sent succesfully")
-            );
-        }
-    </script> -->
 </body>
 
 </html>
