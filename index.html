@@ -17,7 +17,8 @@
             width: 100%;
             height: 100vh;
             /* background-color: royalblue; */
-            background-image: url("cont.jpg");
+            background-image: url("https://source.unsplash.com/1920x1080/?scenery");
+            /* background-image: url("cont.jpg"); */
             background-repeat: no-repeat;
             /* background-size: contain; */
             background-size: cover;
@@ -27,17 +28,18 @@
         }
 
         form {
-            background-color: grey;
+            background-color: rgb(193, 185, 185);
             display: flex;
             flex-direction: column;
             padding: 2vw 4vw;
             width: 50%;
-            height: 90vh;
+            height: 75vh;
             border-radius: 10px;
+            opacity: 0.9;
         }
 
         form h3 {
-            color: greenyellow;
+            color: green;
             font-weight: 800;
             margin-bottom: 10px;
         }
@@ -70,7 +72,7 @@
             margin: auto;
             border-radius: 30px;
         }
-        
+
         @media screen and (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -104,8 +106,6 @@
 
 <body>
     <div class="container">
-        <!-- <form onsubmit="sendEmail(); reset();  return false;"> -->
-        <!-- <form onsubmit="sendEmail"> -->
         <form action="https://formsubmit.co/28ab7ddf1747f3638636296e8af03bf9 " method="POST">
             <h3>GET IN TOUCH</h3>
             <label for="name">Name: </label>
@@ -119,6 +119,7 @@
             <button type="submit">Send</button>
         </form>
     </div>
+
 </body>
 
 </html>
